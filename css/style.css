@@ -1,0 +1,347 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url("../fonts/Raleway-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url("../fonts/Raleway-ExtraBold.ttf");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Regular.ttf");
+    font-weight: 400;
+}
+
+
+body {
+  margin: 0;
+  background-color: #ccc;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1920px;
+  box-sizing: border-box;
+}
+
+.main-header {
+    width: 1920px;
+    min-height: 80px;
+    padding: 50px;
+    box-sizing: border-box;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+}
+
+.main-header-wrp {
+  width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.main-header-logo {
+    width: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 150px 0 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.main-header-logo:hover {
+    opacity: 0.5;
+}
+
+.main-header-logo:active {
+    opacity: 1;
+}
+
+.main-header-logo-icon {
+    fill: #ffffff;
+}
+
+.main-header-logo-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.main-header-navigate {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-header-navigate-list {
+    margin: 0 60px 0 0;
+    padding: 0;
+    list-style-type: none;
+    text-transform: capitalize;
+    display: flex;
+}
+
+.main-header-navigate-list-item {
+    margin: 0 30px 0 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.main-header-navigate-list-item:last-child {
+    margin: 0;
+}
+
+.main-header-navigate-list-item-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+    transition: opacity 0.5s ease-out;
+}
+
+.main-header-navigate-list-item-link:hover {
+    opacity: 0.5;
+}
+
+.main-header-navigate-list-item-link:active {
+    opacity: 1;
+}
+
+.main-header-navigate-basket {
+    height: 24px;
+    width: 24px;
+    border: none;
+    margin: 0 30px 0 0;
+    padding: 0;
+    background-color: transparent;
+    outline: none;
+    transition: opacity 0.5s ease-out;
+}
+
+.main-header-navigate-basket:hover {
+    opacity: 0.5;
+}
+
+.main-header-navigate-basket:active {
+    opacity: 1;
+}
+
+.main-header-navigate-basket-icon {
+    fill: #ffffff;
+}
+
+.main-header-navigate-form{
+    display: flex;
+}
+
+.main-header-navigate-form-label{
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-image: url("../img/search-btn.svg");
+    height: 24px;
+    width: 24px;
+    transition: opacity 0.5s ease-out;
+}
+
+.main-header-navigate-form-label:hover{
+    opacity: 0.5;
+}
+
+
+.main-header-navigate-form-search {
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    opacity: 0; 
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: opacity 0.5s linear;
+    pointer-events: none;
+    outline: none;
+}
+
+.main-header-navigate-form-search:focus {
+    position: absolute;
+    width: 250px;
+    left: -225px;
+    top: 40px;
+    opacity: 1;
+    border: 1px solid #ffffff;
+    pointer-events: auto;
+}
+
+.carusel {
+    margin: 260px 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.carusel-btn {
+    display: block;
+    width: 40px;
+    height: 73px;
+    opacity: 1;
+    position: relative;
+    transition: opacity 0.5s ease-out;
+}
+
+.carusel-btn:nth-of-type(1) {
+    margin: 95px 475px 0 0;
+}
+
+.carusel-btn:nth-of-type(2) {
+    margin: 95px 0 0 475px;
+}
+
+.carusel-btn:nth-of-type(1):after {
+    content: "";
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    border-bottom: 2px solid #d3c1ad;;
+    border-left: 2px solid #d3c1ad;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 10px;
+    left: 25px;
+}
+
+.carusel-btn:nth-of-type(2):after {
+    content: "";
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    border-top: 2px solid #d3c1ad;;
+    border-right: 2px solid #d3c1ad;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 10px;
+    left: -25px;
+}
+
+.carusel-btn:hover {
+    opacity: 0.5;
+}
+
+.carusel-btn:active {
+    opacity: 1;
+}
+
+.carusel-info {
+    width: 590px;
+    min-height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.carusel-info-little-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.carusel-info-title {
+    margin: 15px 0 20px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.carusel-info-text {
+    margin: 0 auto 50px auto;
+    width: 565px;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    word-break: break-all;
+}
+
+.carusel-info-button {
+    margin: 0 auto;
+    width: 170px;
+    height: 50px;
+    background-color: #998675;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+    transition: opacity 0.5s ease-out;
+    outline: none;
+}
+
+.carusel-info-button:hover {
+    opacity: 0.8;
+}
+
+.carusel-info-button:active {
+    opacity: 1;
+}
+
+.carusel-pagination {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    margin: 301px 0 0 0;
+}
+
+.carusel-pagination-item {
+    display: block;
+    width: 11px;
+    height: 11px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: 0.5;
+    border: 2px solid transparent;
+}
+
+.carusel-pagination-item:hover {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    transform: scale(1.2)
+}
