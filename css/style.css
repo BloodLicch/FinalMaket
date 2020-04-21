@@ -22,25 +22,37 @@
     font-weight: 400;
 }
 
+
+body {
+  margin: 0;
+  background-color: #ccc;
+}
+
 a {
     text-decoration: none;
     outline: none;
 }
 
 .container {
-    margin: 0 auto;
-    width: 1920px;
+  margin: 0 auto;
+  width: 1920px;
+  box-sizing: border-box;
 }
 
 .main-header {
     width: 1920px;
     min-height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 40px;
-    z-index: 10;
+    padding: 50px;
+    box-sizing: border-box;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+}
+
+.main-header-wrp {
+  width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  box-sizing: border-box;
 }
 
 .main-header-logo {
@@ -49,12 +61,16 @@ a {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    margin: 0 220px 0 0;
+    margin: 0 150px 0 0;
     transition: opacity 0.5s ease-out;
 }
 
 .main-header-logo:hover {
     opacity: 0.5;
+}
+
+.main-header-logo:active {
+    opacity: 1;
 }
 
 .main-header-logo-icon {
@@ -77,6 +93,7 @@ a {
 
 .main-header-navigate-list {
     margin: 0 60px 0 0;
+    padding: 0;
     list-style-type: none;
     text-transform: capitalize;
     display: flex;
@@ -151,40 +168,38 @@ a {
     opacity: 0.5;
 }
 
-.main-header-navigate-form-search{
-    position: absolute;
-    width: 250px;
+
+.main-header-navigate-form-search {
+    width: 100%;
+    height: 100%;
     color: #ffffff;
-    left: -225px;
-    top: 40px;
-    opacity: 0;
-    border: 1px solid #ffffff;
+    opacity: 0; 
+    border: none;
     padding: 5px;
     border-radius: 5px;
     background-color: transparent;
     transition: opacity 0.5s linear;
     pointer-events: none;
+    outline: none;
 }
 
-.main-header-navigate-form-search:focus{
+.main-header-navigate-form-search:focus {
+    position: absolute;
+    width: 250px;
+    left: -225px;
+    top: 40px;
     opacity: 1;
+    border: 1px solid #ffffff;
     pointer-events: auto;
 }
 
 .carusel {
+    margin: 260px 0 0 0;
     width: 100%;
-    min-height: 1000px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
-    background-image: url("../img/bg.jpg");
-    background-size: cover;
-    
     box-sizing: border-box;
-    margin: 0 auto;
-    padding: 380px 150px 40px 150px;
-    position: relative;
 }
 
 .carusel-btn {
@@ -263,13 +278,13 @@ a {
     width: 100%;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    font-size: 52px;
+    font-size: 50px;
     font-weight: 800;
     color: #ffffff;
 }
 
 .carusel-info-text {
-    margin: 0 0 50px 0;
+    margin: 0 auto 50px auto;
     width: 565px;
     display: block;
     font-family: 'Montserrat', sans-serif;
@@ -306,13 +321,12 @@ a {
 }
 
 .carusel-pagination {
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
-    width: 130px;
+    justify-content: center;
     padding: 5px 0;
-    position: absolute;
-    bottom: 40px;
-    margin: auto;
+    margin: 301px 0 0 0;
 }
 
 .carusel-pagination-item {
