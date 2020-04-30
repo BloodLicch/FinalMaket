@@ -1184,6 +1184,7 @@ a {
     font-weight: 300;
     color: #c7b299;
     text-decoration: none;
+    text-transform: capitalize;
 }
 
 .posts-item-caption-link:after{
@@ -1194,10 +1195,6 @@ a {
     height: 8px;
     background-image: url("../img/arrow.svg");
     background-size: cover;
-}
-
-.posts-item-caption-link:first-letter {
-    text-transform: uppercase;
 }
 
 .posts-item-caption-link:hover {
@@ -1309,4 +1306,272 @@ a {
 
 .partners-link:active{
     transform: scale(1.5);
+}
+
+.main-footer {
+    width: 100%;
+    margin: 0;
+}
+
+.main-footer-review {
+    background-color: #191919;
+    margin: 0;
+    padding: 80px 375px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.main-footer-review-brand,
+.main-footer-review-shortposts,
+.main-footer-review-twitter,
+.main-footer-review-widget {
+    width: 270px;
+    margin: 0;
+}
+
+.main-footer-review-brand {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-footer-review-brand-text {
+    width: 100%;
+    margin: 30px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #555555;
+}
+
+.main-footer-review-brand-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #d1d1d1;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.main-footer-review-brand-link:after{
+    margin: 0 0 0 10px;
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 8px;
+    background-image: url("../img/arrow.svg");
+    background-size: cover;
+}
+
+.main-footer-review-brand-link:hover {
+    animation: caption-link-anim 2s infinite;
+    animation-delay: 0.5s;
+    animation-direction: alternate-reverse;
+}
+
+.main-footer-review-shortposts-title,
+.main-footer-review-twitter-title,
+.main-footer-review-widget-title {
+    width: 100%;
+    display: block;
+    text-transform: capitalize;
+    margin: 20px 0 30px 0;
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.main-footer-review-shortposts-item,
+.main-footer-review-twitter-item{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 20px 0;
+    border-bottom: 2px solid #252525;
+    padding: 0 0 20px 0;
+    box-sizing: border-box;
+}
+
+.main-footer-review-shortposts-item:last-child,
+.main-footer-review-twitter-item:last-child {
+    margin: 0;
+}
+
+.main-footer-review-shortposts-item-date,
+.main-footer-review-twitter-item-date {
+    margin: 0;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #444444;
+    display: block;
+    transition: color 0.5s ease-out 0.1s;
+}
+
+.main-footer-review-shortposts-item-date {
+    margin: 0 0 10px 0;
+}
+
+.main-footer-review-twitter-item-date {
+    margin: 10px 0 0 0;
+}
+
+.main-footer-review-shortposts-item-text,
+.main-footer-review-twitter-item-text{
+    width: 100%;
+    word-break: break-all;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #555555;
+    transition: color 0.5s ease-out 0.1s;
+}
+
+.main-footer-review-shortposts-item:hover .main-footer-review-shortposts-item-date {
+    color: #ffffff;
+}
+
+.main-footer-review-shortposts-item:hover .main-footer-review-shortposts-item-text {
+    color: #c7b299;
+}
+
+.main-footer-review-twitter-item:hover .main-footer-review-twitter-item-date {
+    color: #ffffff;
+}
+
+.main-footer-review-twitter-item:hover .main-footer-review-twitter-item-text {
+    color: #c7b299;
+}
+
+.main-footer-review-twitter-item-link {
+    text-decoration: none;
+    color: #02aedd;
+    transition: color 0.5s ease-out;
+}
+
+.main-footer-review-twitter-item-link:hover {
+    color: #6a6a6a;
+}
+
+.main-footer-review-twitter-item-link:active {
+    color: #02aedd;
+}
+
+.main-footer-review-widget-wrp {
+    width: 100%;
+    margin:0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.main-footer-review-widget-img {
+    width: 130px;
+    height: 98px;
+    margin: 0 0 10px 0;
+    transition: transform 0.5s ease-out 0.1s;
+}
+
+.main-footer-review-widget-img:nth-last-child(-n+2) {
+    margin: 0;
+}
+
+.main-footer-review-widget-img:hover {
+    transform: scale(1.3);
+}
+
+.main-footer-links {
+    width: 100%;
+    margin: 0;
+    padding: 40px 375px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #111111;
+    box-sizing: border-box;
+}
+
+.main-footer-links-useful-text {
+    margin: 0 10px 0 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #555555;
+}
+
+.main-footer-links-useful-text-link {
+    text-decoration: none;
+    color: #959595;
+    transition: color 0.5s ease-out;
+}
+
+.main-footer-links-useful-text-link:hover {
+    color: #c7b299;
+}
+
+.main-footer-links-useful-text-link:active {
+    color: #959595;
+}
+
+.main-footer-links-useful-link {
+    margin: 0 10px 0 0;
+    padding: 0 0 0 10px;
+    border-left: 1px solid #555555;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #555555;
+    transition: color 0.5s ease-out;
+    box-sizing: border-box;
+}
+
+.main-footer-links-useful-link:last-child {
+    margin: 0;
+}
+
+.main-footer-links-useful-link:hover {
+    color: #c7b299;
+}
+
+.main-footer-links-useful-link:active {
+    color: #555555;
+}
+
+.main-footer-links-owner-text {
+    margin: 0 10px 0 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #555555;
+    box-sizing: border-box;
+}
+
+.main-footer-links-owner-text:last-child {
+    padding: 0 0 0 10px;
+    margin: 0;
+    border-left: 1px solid #555555;
+}
+
+.main-footer-links-owner-text-link {
+    text-decoration: none;
+    color: #959595;
+    transition: color 0.5s ease-out;
+}
+
+.main-footer-links-owner-text-link:hover {
+    color: #c7b299;
+}
+
+.main-footer-links-owner-text-link:active {
+    color: #959595;
 }
